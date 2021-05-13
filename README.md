@@ -8,5 +8,5 @@ Informally, the [Damerau–Levenshtein distance](<https://en.wikipedia.org/wiki/
 
 In computer science and statistics, the [Jaro–Winkler distance](<https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance>) is a string metric measuring an edit distance between two sequences.
 
-https://rosettacode.org/wiki/Levenshtein_distance
+https://rosettacode.org/wiki/Levenshtein_distance \
 https://rosettacode.org/wiki/Jaro_distance
