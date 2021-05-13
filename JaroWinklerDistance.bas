@@ -8,9 +8,12 @@
 70 Word_1$="QWERTY" : Word_2$="QWERYT" : ? Word_1$;" - ";Word_2$ : EXEC _JWD_ : ?
 
 11000 END
-12000 REM JaroWinklerDistance INPUT(Word_1$, Word_2$) USE(Z$, I, J, K, L, M, N, S1, S2, Min, Max) RETURN(FLOAT Result)
 12000 PROC _JWD_
-12010   Result=0 : S1=LEN(Word_1$) : S2=LEN(Word_2$)
+11601   REM Word_1$ : Word_2$ : DLDm[]
+11602   I=0: J=0 : K=0 : L=0 : M=0 : N=0 : Min=0 : Max=0 : Result=0 : Z$=""
+
+
+12010   S1=LEN(Word_1$) : S2=LEN(Word_2$)
 12020   IF S1>S2 THEN Z$=Word_1$ : Word_1$=Word_2$ : Word_2$=Z$ : M=S1 : S1=S2 : S2=M
 12030   J=1: M=0 : N=0 : L=INT(S2/2) : Z$=Word_2$
 12040   FOR I=1 TO S1
