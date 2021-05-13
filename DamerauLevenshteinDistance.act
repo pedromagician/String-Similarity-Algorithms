@@ -16,8 +16,8 @@ INT FUNC DamerauLevenshteinDistance(STRING str1, str2)
   N=str2(0)
 
   FOR I=0 TO MatrixSize-1 DO matrix(I)=0 OD
-  FOR I=0 TO M DO matrix(I+width)=I OD
-  FOR J=0 TO N DO matrix(J*width)=J OD
+  FOR I=1 TO M DO matrix(I+width)=I OD
+  FOR J=1 TO N DO matrix(J*width)=J OD
   
   FOR J=1 TO N DO
     FOR I=1 TO M DO
